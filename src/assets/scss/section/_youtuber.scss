@@ -1,0 +1,83 @@
+h2 {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: 1.4rem;
+        margin-right: 0.5vw;
+    }
+}
+
+.youtuber__inner {
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+
+    .youtuber {
+        // margin-right: 2vw;
+        margin-bottom: 2vh;
+
+        .youtuber__img {
+            // width: 160px;
+            // height: 160px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+
+        .youtuber__info {
+            // width: 160px;
+            text-align: center;
+        }
+    }
+}
+
+#youtuberPage {
+    .youtuber__inner {
+        justify-content: space-between;
+
+        .youtuber {
+            margin-right: 2vw;
+
+            .youtuber__img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .youtuber__info {
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    #youtuberPage {
+        .youtuber__inner {
+            .youtuber {
+                width: 23%;
+                margin-right: 0;
+
+                .youtuber__img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .youtuber__info {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    #youtuberPage {
+        .youtuber__inner {
+            .youtuber {
+                width: 32%;
+            }
+        }
+    }
+}

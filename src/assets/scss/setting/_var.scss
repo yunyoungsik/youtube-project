@@ -1,0 +1,38 @@
+:root {
+    --mainfont-nanum: "nanumSquareNeo";
+    --mainfont-netflix: "NetflixSans";
+
+    --black: #000;
+    --black100: #1b1b1b;
+    --black200: #333333;
+    --black300: #494949;
+    --black400: #555555;
+    --black500: #797979;
+
+    --white: #fff;
+    --white100: #fff;
+    --white200: #eeeeee;
+    --white300: #d6d6d6;
+    --white400: #dbdbdb;
+    --white500: #a3a3a3;
+
+    --red: #E50914;
+
+    // 폰트 셋팅
+    font-family: var(--mainfont-netflix), var(--mainfont-nanum);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    // 폰트 최적화
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
