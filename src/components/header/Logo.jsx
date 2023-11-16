@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { AiFillYoutube } from 'react-icons/ai'
+import { FaMaxcdn } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 
 const Logo = () => {
@@ -8,9 +8,9 @@ const Logo = () => {
         <h1 className='header__logo'>
             <Link to='/'>
                 <em>
-                    <AiFillYoutube />
+                    <FaMaxcdn />
                 </em>
-                <span><i>Molabogi</i> YouTube</span>
+                <span><i>MOLABOGI</i> YouTube</span>
             </Link>
         </h1>
     )
