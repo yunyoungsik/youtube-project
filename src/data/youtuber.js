@@ -2,25 +2,25 @@ export const youtuberText = [
     {
         img: "https://yt3.googleusercontent.com/ytc/APkrFKbmmmxB14i2L-vXnCmW92-cLR-nfBN6AfChyvrggQ=s176-c-k-c0x00ffffff-no-rj",
         author: "지무비 : G Movie",
-        channelId: "UCGQlrCyCK2h_sVifV-s7XfQ",
+        channelId: "UCaHGOzOyeYzLQeKsVkfLEGA",
         channelAddress: "https://www.youtube.com/channel/UCaHGOzOyeYzLQeKsVkfLEGA",
     },
     {
         img: "https://yt3.googleusercontent.com/ytc/APkrFKbmi4A362UwA7gkfEzSRxtM_srp6I2AZBcz_7Kj=s176-c-k-c0x00ffffff-no-rj",
         author: "김시선",
-        channelId: "UCevIizMe-9QVCDSyISrI6dg",
+        channelId: "UC79hJz6y1EEiIkwfHOuWC4w",
         channelAddress: "https://www.youtube.com/@kimsiseon",
     },
     {
         img: "https://yt3.googleusercontent.com/_jWWV0MMAXeyUV1OqC8SZ4c6cqin7kayz5Pn2IM6j0Dvm2lu9MfOq4UIQ9eWBCVa2TWs3jsYKOI=s176-c-k-c0x00ffffff-no-rj",
         author: "달빛뮤즈",
-        channelId: "UCzSF8YhxXApA1jui-bwOjuA",
+        channelId: "UCMguxwveCsLVpyKrLz-EFTg",
         channelAddress: "https://www.youtube.com/user/Worldnews1111",
     },
     {
         img: "https://yt3.googleusercontent.com/ytc/APkrFKZ4sm9csXoi2w_IzWeuPU82zdyJF2NETDWFFsb03w=s176-c-k-c0x00ffffff-no-rj",
         author: "B Man 삐맨",
-        channelId: "UCpcft4FJXgUjnxWoQYsl7Ug",
+        channelId: "UCxlv4aOnrRTXMRSL8bVJqEw",
         channelAddress: "https://www.youtube.com/channel/UCxlv4aOnrRTXMRSL8bVJqEw",
     },
     {
