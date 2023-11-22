@@ -1,8 +1,9 @@
 .today__inner {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     overflow: hidden;
 
     .today__thum {
@@ -20,7 +21,6 @@
 
     .today__text {
         width: 59%;
-        height: 310px;
 
         .today {
             width: 20%;
@@ -55,6 +55,27 @@
         .desc {
             font-size: 1rem;
             color: var(--white100);
+            @include line-two;
+        }
+    }
+}
+
+
+@media(max-width: 1450px) {
+
+    .today__inner {
+        display: block;
+
+        .today__thum {
+            width: 100%;
+        }
+
+        .today__text {
+            .today {
+                margin: 1vh 0;
+            }
+
+            width: 100%;
         }
     }
 }
