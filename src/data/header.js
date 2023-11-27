@@ -31,10 +31,6 @@ export const keywordText = [
         src: "/search/지무비"
     },
     {
-        title: "고몽",
-        src: "/search/고몽"
-    },
-    {
         title: "김시선",
         src: "/search/김시선"
     },
@@ -65,6 +61,50 @@ export const keywordText = [
     {
         title: "띵잘",
         src: "/search/띵잘"
+    },
+    {
+        title: "어퍼컷",
+        src: "/search/어퍼컷"
+    },
+    {
+        title: "소개해주는남자",
+        src: "/search/소개해주는남자"
+    },
+    {
+        title: "무비트립",
+        src: "/search/무비트립"
+    },
+    {
+        title: "캡틴라미",
+        src: "/search/캡틴라미"
+    },
+    {
+        title: "필름에빠지다",
+        src: "/search/필름에빠지다"
+    },
+    {
+        title: "동네비디오방",
+        src: "/search/동네비디오방"
+    },
+    {
+        title: "엔스",
+        src: "/search/엔스"
+    },
+    {
+        title: "PLAYMOVIE",
+        src: "/search/PLAYMOVIE"
+    },
+    {
+        title: "진솔한리뷰",
+        src: "/search/진솔한리뷰"
+    },
+    {
+        title: "늘보",
+        src: "/search/늘보"
+    },
+    {
+        title: "민호타우르스",
+        src: "/search/민호타우르스"
     },
 ]
 
