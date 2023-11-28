@@ -13,6 +13,9 @@
    
 [해결방법]   
 ```js
+const channelPageClass = loading ? 'isLoading' : 'isLoaded'
+ //기존코드
+<section id='channelPage' className={channelPageClass}>
 {channelDetail && (
  //기존 코드
 )}
