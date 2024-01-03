@@ -8,30 +8,6 @@
 - react-router-dom, axios, react-icons, react-player, sass, react-helmet-async, swiper 설치<br />
 `npm install react-router-dom axios react-icons react-player sass react-helmet-async swiper`
    
-## 트러블슈팅
-[문제]   
-정보를 먼저 불러오는 경우 에러 발생
-   
-[해결방법]   
-```js
-const channelPageClass = loading ? 'isLoading' : 'isLoaded'
- //기존코드
-<section id='channelPage' className={channelPageClass}>
-{channelDetail && (
- //기존 코드
-)}
-```
-1.조건부 렌더링으로 에러 방지
-   - 문제 원인은 데이터가 로드되기 전에 해당 정보를 사용하려는 것에서 시작됐습니다.
-   - 이를 해결하기 위해 코드에서 `{channelDetail &&}`를 사용하여 조건부 렌더링을 수행했습니다.
-   - `{channelDetail &&}`를 통해 channelDetail이 존재하는지 여부를 확인하고, 존재할 때만 코드를 실행함으로써 에러를 방지했습니다.
-2. 데이터 로딩 상태 관리
-   - 데이터가 로드되는 동안 사용자에게 로딩 상태를 보여줍니다.
-   - 이를 위해 데이터를 불러오는 중일 때 class를 조절하여 페이지 스타일을 변경하고 페이지가 로딩 중일 때는 opacity가 0으로 설정되어 화면에 표시되지 않고, 로딩이 완료되면 opacity가 1로 변경되어 페이지가 표시됩니다.
-3. 코드 최적화 및 성능 향상
-   - 데이터를 불러오는 방식을 최적화하여 불필요한 호출을 줄이고 성능을 향상시킬 수 있습니다.
-   - 이러한 접근 방식으로 정보를 먼저 불러오는 경우 발생하는 에러를 예방하고, 사용자 경험을 향상시킬 수 있습니다.
-   
 ## 유튜브 API
 1. 유튜브 API사이트에서 API KEY를 받은 후 폴더 최상위에 .env를 만든후 API KEY를 저장한다.
 2. .gitignore에 .env를 업로드 못하게 추가한다
@@ -73,3 +49,28 @@ Search 컴포넌트를 사용하여 검색을 처리합니다. 사용자가 검�
 handleSearch 함수는 검색어가 있을 때만 URL을 변경하도록 구현되어 있습니다. 검색어가 비어 있지 않으면 useNavigate hook을 사용하여 React Router의 navigate 함수를 호출하여 새로운 경로로 이동합니다. 그 후에 검색어 상태를 초기화하여 빈 문자열로 설정하여 사용자가 새로운 검색을 할 수 있도록 합니다.<br />
 또한, Enter 키를 누르면 검색어를 가지고 handleSearch 함수가 호출되도록 onKeyDown 이벤트도 구현되어 있습니다. 이렇게 하면 사용자가 텍스트 입력 후 엔터를 누르거나 버튼을 클릭하여 검색할 수 있습니다.<br />
 결론적으로, 사용자가 검색어를 입력하면 해당 검색어로 새로운 경로로 이동하고, 검색 결과를 표시합니다.
+
+## 트러블슈팅
+[문제]   
+정보를 먼저 불러오는 경우 에러 발생
+   
+[해결방법]   
+```js
+const channelPageClass = loading ? 'isLoading' : 'isLoaded'
+ //기존코드
+<section id='channelPage' className={channelPageClass}>
+{channelDetail && (
+ //기존 코드
+)}
+```
+1.조건부 렌더링으로 에러 방지
+   - 문제 원인은 데이터가 로드되기 전에 해당 정보를 사용하려는 것에서 시작됐습니다.
+   - 이를 해결하기 위해 코드에서 `{channelDetail &&}`를 사용하여 조건부 렌더링을 수행했습니다.
+   - `{channelDetail &&}`를 통해 channelDetail이 존재하는지 여부를 확인하고, 존재할 때만 코드를 실행함으로써 에러를 방지했습니다.
+2. 데이터 로딩 상태 관리
+   - 데이터가 로드되는 동안 사용자에게 로딩 상태를 보여줍니다.
+   - 이를 위해 데이터를 불러오는 중일 때 class를 조절하여 페이지 스타일을 변경하고 페이지가 로딩 중일 때는 opacity가 0으로 설정되어 화면에 표시되지 않고, 로딩이 완료되면 opacity가 1로 변경되어 페이지가 표시됩니다.
+3. 코드 최적화 및 성능 향상
+   - 데이터를 불러오는 방식을 최적화하여 불필요한 호출을 줄이고 성능을 향상시킬 수 있습니다.
+   - 이러한 접근 방식으로 정보를 먼저 불러오는 경우 발생하는 에러를 예방하고, 사용자 경험을 향상시킬 수 있습니다.
+   
