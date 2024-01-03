@@ -1,7 +1,8 @@
-# 나만의 몰아보기 유튜브 사이트 만들기
-유튜브 API를 이용해서 몰아보기 사이트를 만들었습니다.
-   
-<img src="https://github.com/yunyoungsik/youtube-project/blob/main/src/assets/img/yutube_project-min.jpg" />
+# youtube-project
+<img width="100%" src="https://github.com/yunyoungsik/youtube-project/blob/main/src/assets/img/yutube_project-min.jpg" />
+유튜브 React와 YouTube API를 활용한 이용해서 몰아보기 사이트를 만들었습니다.<br />
+인기 유튜버들의 구독순 1위부터 30위까지 최신 영상을 제공하며, <br />
+사용자는 쉽게 새로운 영상을 찾아 시청할 수 있는 편리한 환경을 경험할 수 있습니다.
 
 ## 설치
 - react-router-dom, axios, react-icons, react-player, sass, react-helmet-async, swiper 설치   
