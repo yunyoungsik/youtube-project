@@ -63,7 +63,7 @@ const channelPageClass = loading ? 'isLoading' : 'isLoaded'
  //기존 코드
 )}
 ```
-1.조건부 렌더링으로 에러 방지
+1. 조건부 렌더링으로 에러 방지
    - 문제 원인은 데이터가 로드되기 전에 해당 정보를 사용하려는 것에서 시작됐습니다.
    - 이를 해결하기 위해 코드에서 `{channelDetail &&}`를 사용하여 조건부 렌더링을 수행했습니다.
    - `{channelDetail &&}`를 통해 channelDetail이 존재하는지 여부를 확인하고, 존재할 때만 코드를 실행함으로써 에러를 방지했습니다.
